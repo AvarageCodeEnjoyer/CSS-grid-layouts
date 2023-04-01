@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+
+    body {
+      margin: 0px;
+      height: 100vh;
+      background-color: rgb(143, 188, 228);
+      display: grid;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      display: grid;
+      width: 1400px;
+      height: 800px;
+      background-color: white ;
+      justify-content: center;
+      align-items: center;
+    }
+
+    form {
+      display: grid;
+      width: 700px;
+      height: 400px;
+      border: 2px solid black;
+      justify-content: center;
+    }
+
+    h1 {
+      color: blue;
+      align-self: center;
+      justify-self: center;
+    }
+
+    input[type="submit"] {
+      width: 100px;
+      justify-self: center;
+      margin: 20px;
+      background-color: rgba(108, 108, 164, 0.663);
+      border-radius: 10px;
+      transition: 0.1s;
+    }
+
+    input[type="submit"]:hover {
+      background-color: rgb(108, 108, 164);
+    } 
+
+    .formGroup {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    input, textarea {
+      width: 350px;
+      height: 20px;
+    }
+
+    textarea {
+      height: 100px;
+      resize: none;
+    }
+
+    .formGroup > label {
+      align-self: left;
+      font-size: 30px;
+    }
+
+
+    fieldset {
+      background-color: rgb(194, 193, 193);
+      width: 600px;
+      gap: 10px;
+      display: grid; 
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <form action="">
+      <h1>Register Form</h1>
+      <fieldset>
+        <div class="formGroup">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="Email">
+        </div>
+        <div class="formGroup">
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" placeholder="First Name">
+        </div>
+        <div class="formGroup">
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" placeholder="last Name">
+        </div>
+        <div class="formGroup">
+          <label for="amount">Money</label>
+          <input type="number" id="amount" placeholder="Dollar Amount">
+        </div>
+        <div class="formGroup">
+          <label for="comments">Comments</label>
+          <textarea type="text" id="comments" placeholder="Any Comments?"></textarea>
+        </div>
+      </fieldset>
+        <input type="submit">
+    </form>
+  </div>
+</body>
+</html>
